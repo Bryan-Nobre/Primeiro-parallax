@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolltrigger</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <section class="parallax-zoom">
+      <img src="img/Futuro.png" class="future" alt="">
+    </section>
+
+    <section class="parallax-montanhas">
+      <!-- aqui entra todo o código SVG do seu exemplo -->
+      <image class="sky" src="img/sky.jpg" width="1200" height="590" />
+      <image class="mountBg" src="img/mountBg.webp" width="1200" height="800" />
+      <h1 class="texto-montanha">Monte Everest</h1>
+      <image class="mountMg" src="img/mountMg.png" width="1200" height="800" />
+      <image class="cloud2" src="img/cloud2.webp" width="1200" height="800" />
+      <image class="mountFg" src="img/mountFg.png" width="1200" height="800" />
+      <image class="cloud1" src="img/cloud1.png" width="1200" height="800" />
+      <image class="cloud3" src="img/cloud3.png" width="1200" height="800" />
+
+      <section class="block-text">
+        <section class="everest" aria-labelledby="everest-title">
+          <!-- ===================== HERO ===================== -->
+          <div class="hero">
+            <div>
+              <span class="kicker" data-aos="fade-right" data-aos-duration="1500"><span class="dot" aria-hidden="true"></span > Monte Everest</span>
+              <h1 id="everest-title" data-aos="fade-right" data-aos-duration="1000">Topo do Mundo</h1>
+              <p class="lead" data-aos="zoom-in-down" data-aos-duration="1000">O Everest é a montanha mais alta do planeta, símbolo de desafio humano, natureza extrema e
+                espiritualidade milenar. Uma referência mundial em montanhismo e aventura.</p>
+              <div class="cta">
+                <button class="btn primary" type="button" data-aos="fade-right" data-aos-duration="1500">Explorar rotas</button>
+                <button class="btn" type="button" data-aos="zoom-in" data-aos-duration="1000">Condições & temporadas</button>
+                <button class="btn ghost" type="button" data-aos="fade-left" data-aos-duration="2500">Baixar mídia</button>
+              </div>
+
+              <div class="kpis" role="list" aria-label="Indicadores-chave do Everest">
+                <div class="card" role="listitem" data-aos="zoom-in" data-aos-duration="1000"> 
+                  <div class="icon" aria-hidden="true">🏔️</div>
+                  <div class="num">8.848,86 m</div>
+                  <div class="lbl">Altitude do cume</div>
+                </div>
+                <div class="card" role="listitem" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="icon" aria-hidden="true">📍</div>
+                  <div class="num">Nepal / Tibete</div>
+                  <div class="lbl">Localização</div>
+                </div>
+                <div class="card" role="listitem" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="icon" aria-hidden="true">🌡️</div>
+                  <div class="num">−36 ºC</div>
+                  <div class="lbl">Média invernal no cume</div>
+                </div>
+                <div class="card" role="listitem" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="icon" aria-hidden="true">💨</div>
+                  <div class="num">&gt;160 km/h</div>
+                  <div class="lbl">Rajadas de vento</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual -->
+            <figure class="visual" aria-labelledby="figcap" data-aos="zoom-in" data-aos-duration="1000">
+              <svg viewBox="0 0 800 600" role="img" aria-labelledby="figcap">
+                <title id="figcap">Everest — camadas geladas e neblina sutil</title>
+                <defs>
+                  <linearGradient id="gSnow" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#eef6ff" />
+                  </linearGradient>
+                  <linearGradient id="gRock" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#dbeafe" />
+                    <stop offset="100%" stop-color="#c7d2fe" />
+                  </linearGradient>
+                </defs>
+                <!-- base e neblina -->
+                <path d="M0 520 Q 120 460 220 480 T 430 470 T 620 490 T 800 460 V 600 H 0 Z" fill="#e5e7eb" />
+                <path d="M0 430 Q 160 400 300 420 T 600 410 T 800 380 V 600 H 0 Z" fill="#f8fafc" />
+                <path d="M0 470 Q 180 440 300 455 T 640 450 T 800 430 V 600 H 0 Z" fill="#f1f5f9" />
+                <!-- pico principal -->
+                <path d="M140 520 L 380 180 L 460 300 L 560 220 L 720 520 Z" fill="url(#gRock)" />
+                <!-- neve -->
+                <path d="M340 260 L 380 180 L 420 260 L 400 250 L 380 280 L 360 250 Z" fill="url(#gSnow)" />
+                <path d="M520 250 L 560 220 L 590 270 L 570 260 L 560 280 L 540 260 Z" fill="url(#gSnow)" />
+                <!-- rampa frontal -->
+                <path d="M0 510 Q 180 500 320 520 T 620 530 T 800 520 V 600 H 0 Z" fill="#ffffff" />
+              </svg>
+              <div class="snow" aria-hidden="true">
+                <i style="left:8%; top:-10%"></i>
+                <i style="left:18%; top:-20%"></i>
+                <i style="left:28%; top:-15%"></i>
+                <i style="left:36%; top:-18%"></i>
+                <i style="left:48%; top:-22%"></i>
+                <i style="left:58%; top:-12%"></i>
+                <i style="left:66%; top:-16%"></i>
+                <i style="left:74%; top:-14%"></i>
+                <i style="left:82%; top:-19%"></i>
+              </div>
+            </figure>
+          </div>
+
+          <!-- ===================== CONTENT ===================== -->
+          <div class="content-grid" aria-label="Conteúdo detalhado">
+            <!-- História -->
+            <article class="panel" data-aos="fade-down-right" data-aos-duration="1000">
+              <h2>História das Expedições</h2>
+              <p>Em 1953, Sir Edmund Hillary e Tenzing Norgay conquistaram o cume do Everest pela rota sul, marcando um
+                feito histórico para o montanhismo. Antes disso, em 1924, Mallory e Irvine desapareceram na Face Norte,
+                alimentando um dos maiores mistérios das montanhas. Desde então, milhares de alpinistas têm desafiado a
+                montanha, transformando-a em um ícone da superação humana.</p>
+              <div class="timeline" aria-label="Linha do tempo do Everest">
+                <div class="t-item"><strong>1856</strong> Primeira medição reconhecida da altitude.</div>
+                <div class="t-item"><strong>1924</strong> Mistério de Mallory &amp; Irvine na Face Norte.</div>
+                <div class="t-item"><strong>1953</strong> Hillary &amp; Norgay alcançam o cume.</div>
+                <div class="t-item"><strong>1996</strong> Tragédia de 8 mortes reforça protocolos de segurança.</div>
+                <div class="t-item"><strong>2020</strong> Nepal e China confirmam altitude oficial de 8.848,86 m.</div>
+              </div>
+            </article>
+
+            <!-- Geografia e Ambiente -->
+            <article class="panel" data-aos="fade-down-left" data-aos-duration="1000">
+              <h2>Geografia e Ambiente</h2>
+              <p>O Everest está localizado na cordilheira do Himalaia, resultado da colisão das placas tectônicas
+                indiana e euroasiática. Seu cume coberto de neve e geleiras alimenta rios importantes da Ásia. O clima é
+                extremo: rajadas de vento ultrapassam 160 km/h e as temperaturas podem cair abaixo de −40 ºC.</p>
+              <ul>
+                <li><strong>Altitude:</strong> 8.848,86 m</li>
+                <li><strong>Massivo:</strong> Cordilheira do Himalaia</li>
+                <li><strong>Coordenadas:</strong> 27.9881°N, 86.9250°E</li>
+              </ul>
+            </article>
+
+            <!-- Desafios -->
+            <article class="panel" data-aos="fade-up-right" data-aos-duration="1000">
+              <h2>Desafios da Ascensão</h2>
+              <ul>
+                <li>Hipóxia na <em>zona da morte</em> (&gt; 8.000 m).</li>
+                <li>Avalanches, seracs e gelo instável.</li>
+                <li>Clima imprevisível e janelas curtas.</li>
+                <li>Exigência física, mental e logística intensas.</li>
+              </ul>
+              <p class="note">* Aclimatação, oxigênio suplementar e guias experientes são essenciais.</p>
+            </article>
+
+            <!-- Cultura & Fatos -->
+            <article class="panel" data-aos="fade-up-left" data-aos-duration="1000">
+              <h2>Cultura & Espiritualidade</h2>
+              <p>No Nepal, é chamado <em>Sagarmatha</em>; no Tibete, <em>Chomolungma</em>. Para os povos locais, o
+                Everest é sagrado, um símbolo espiritual que merece respeito tanto quanto conquista.</p>
+              <table class="facts" aria-label="Fatos rápidos">
+                <thead>
+                  <tr>
+                    <th>Fato</th>
+                    <th>Resumo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Primeira ascensão</td>
+                    <td>1953 — Hillary &amp; Norgay (Rota Sul)</td>
+                  </tr>
+                  <tr>
+                    <td>Rotas populares</td>
+                    <td>Face Sul (Nepal) e Face Norte (Tibete)</td>
+                  </tr>
+                  <tr>
+                    <td>Clima</td>
+                    <td>Frio extremo, ventos fortes, invernos severos</td>
+                  </tr>
+                  <tr>
+                    <td>Risco</td>
+                    <td>Altitude, avalanches, exaustão</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          <section class="block-bottom">
+            <h1 data-aos="fade-down" data-aos-duration="1500">Outros pontos turísticos !!!</h1>
+            <div class="options" data-aos="zoom-in-down" data-aos-duration="1000">
+              <div class="option active"
+                style="--optionBackground:url(https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill,q_auto/memphis/xlarge/36d00da430684c1243a22fcadd968e03.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon"><a href=""><i class="ri-arrow-up-fill"></i></a></div>
+                  <div class="info">
+                    <div class="main">Montanhas Zhangjiajie, China</div>
+                    <div class="sub">O primeiro parque florestal nacional da China</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option"
+                style="--optionBackground:url(https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill,q_auto/memphis/large/60e4be05c4ef4373c71802b0dd3f9e62.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon"><a href=""><i class="ri-arrow-up-fill"></i></a></div>
+                  <div class="info">
+                    <div class="main">Montanhas Rochosas, Estados Unidos e Canadá</div>
+                    <div class="sub">Os turistas podem participar de uma série de atividades</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option"
+                style="--optionBackground:url(https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill,q_auto/memphis/large/75bfa93bd40362e3a7cce1632e1a1b72.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon"><a href=""><i class="ri-arrow-up-fill"></i></a></div>
+                  <div class="info">
+                    <div class="main">Montanhas Atlas, Marrocos</div>
+                    <div class="sub">Marrocos oferece uma variedade de paisagens para a aventura</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option"
+                style="--optionBackground:url(https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill,q_auto/memphis/large/5173301452722ac9de05a5cf147fb9bb.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon"><a href=""><i class="ri-arrow-up-fill"></i></a></div>
+                  <div class="info">
+                    <div class="main">Os Pirenéus, França e Espanha</div>
+                    <div class="sub">Nas profundezas da vasta cordilheira</div>
+                  </div>
+                </div>
+              </div>
+              <div class="option"
+                style="--optionBackground:url(https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill,q_auto/memphis/large/237d118c34877083620f9cdbabc57bae.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon"><a href=""><i class="ri-arrow-up-fill"></i></a></div>
+                  <div class="info">
+                    <div class="main">Monte Everest, Nepal - Tibete</div>
+                    <div class="sub">O pico do Monte Everest está a 8.849 metros acima do nível do mar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br>
+            <p class="footer-text">&copy; 2025 Bryan <br>
+              <a href="">Meu portfólio</a>
+            </p>
+          </section>
+        </section>
+      </section>
+      
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
